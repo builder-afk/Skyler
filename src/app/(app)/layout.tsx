@@ -1,6 +1,6 @@
 import { Header } from "@/components/layout/header"
 import { Sidebar } from "@/components/layout/sidebar"
-import { createClient } from "@/lib/supabase/server"
+import { auth } from "@/auth"
 import { redirect } from "next/navigation"
 
 export default async function DashboardLayout({
@@ -8,14 +8,10 @@ export default async function DashboardLayout({
 }: {
   children: React.ReactNode
 }) {
-  const supabase = await createClient()
-
-  const {
-    data: { user },
-  } = await supabase.auth.getUser()
+  const session = await auth()
 
   // Allow guests to view the layout
-  // if (!user) {
+  // if (!session?.user) {
   //   redirect('/login')
   // }
 

@@ -9,19 +9,14 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
 import { useAppStore } from "@/store/projectStore"
-import { createBrowserClient } from "@supabase/ssr"
+import { signOut } from "next-auth/react"
 
 export function Header() {
   const selectedTool = useAppStore((state) => state.selectedTool)
   const setSelectedTool = useAppStore((state) => state.setSelectedTool)
 
   const handleLogout = async () => {
-    const supabase = createBrowserClient(
-      process.env.NEXT_PUBLIC_SUPABASE_URL!,
-      process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!
-    )
-    await supabase.auth.signOut()
-    window.location.href = '/'
+    await signOut({ callbackUrl: '/' })
   }
 
   return (

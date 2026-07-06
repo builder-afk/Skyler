@@ -5,40 +5,38 @@ import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { createBrowserClient } from "@supabase/ssr"
+import { getProfile, updateProfile } from "@/app/actions/user"
 import { User, Mail, UserCircle, Save } from "lucide-react"
-import type { User as SupabaseUser } from "@supabase/supabase-js"
 import { toast } from "sonner"
 
 export function ProfileForm() {
-  const [user, setUser] = useState<SupabaseUser | null>(null)
+  const [user, setUser] = useState<{ id?: string, email?: string | null, name?: string | null } | null>(null)
   const [displayName, setDisplayName] = useState("")
-
-  const supabase = createBrowserClient(
-    process.env.NEXT_PUBLIC_SUPABASE_URL!,
-    process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!
-  )
 
   useEffect(() => {
     async function getUser() {
-      const { data: { user } } = await supabase.auth.getUser()
-      setUser(user)
-      if (user?.user_metadata?.display_name) {
-        setDisplayName(user.user_metadata.display_name)
+      try {
+        const data = await getProfile()
+        if (data.user) {
+          setUser(data.user)
+          if (data.user.name) {
+            setDisplayName(data.user.name)
+          }
+        }
+      } catch (error) {
+        console.error('Error fetching user:', error)
       }
     }
     getUser()
-  }, [supabase.auth])
+  }, [])
 
   const handleSave = async () => {
-    const { error } = await supabase.auth.updateUser({
-      data: { display_name: displayName }
-    })
-    
-    if (error) {
-      toast.error(error.message)
-    } else {
+    try {
+      const result = await updateProfile({ name: displayName })
+      if (result?.error) throw new Error(result.error)
       toast.success("Profile updated successfully")
+    } catch (error: any) {
+      toast.error(error.message || "Failed to update profile")
     }
   }
 

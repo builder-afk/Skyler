@@ -9,6 +9,7 @@ export const users = pgTable('users', {
   profession: text("profession"),
   emailVerified: timestamp("emailVerified", { mode: "date" }),
   image: text("image"),
+  subscriptionTier: text("subscription_tier").default("free"),
 });
 
 export const accounts = pgTable(
@@ -57,4 +58,23 @@ export const contactMessages = pgTable('contact_messages', {
   mobileNumber: text('mobile_number'),
   message: text('message').notNull(),
   createdAt: timestamp('created_at').defaultNow().notNull(),
+});
+
+export const projects = pgTable('projects', {
+  id: text("id").primaryKey().$defaultFn(() => crypto.randomUUID()),
+  user_id: text("user_id").notNull(),
+  name: text("name").notNull(),
+  idea: text("idea").notNull(),
+  stack: text("stack").notNull(),
+  current_step: integer("current_step").default(1).notNull(),
+  created_at: timestamp('created_at').defaultNow().notNull(),
+});
+
+export const prompts = pgTable('prompts', {
+  id: text("id").primaryKey().$defaultFn(() => crypto.randomUUID()),
+  project_id: text("project_id").notNull(),
+  step: integer("step").notNull(),
+  tool: text("tool").notNull(),
+  content: text("content").notNull(),
+  created_at: timestamp('created_at').defaultNow().notNull(),
 });

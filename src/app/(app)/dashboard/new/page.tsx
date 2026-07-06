@@ -122,7 +122,9 @@ function NewProjectForm() {
     }
 
     toast.success("Project created successfully!")
-    router.push(`/project/${result.project.id}`)
+    if (result.project) {
+      router.push(`/project/${result.project.id}`)
+    }
   }
 
   return (
