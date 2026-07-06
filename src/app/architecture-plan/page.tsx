@@ -1,6 +1,6 @@
 "use client"
 
-import React, { useEffect, useRef } from "react"
+import React, { useEffect, useRef, Suspense } from "react"
 import { useSearchParams } from "next/navigation"
 import Link from "next/link"
 import { useCompletion } from "@ai-sdk/react"
@@ -8,7 +8,7 @@ import ReactMarkdown from "react-markdown"
 import remarkGfm from "remark-gfm"
 import { ArrowLeft, Layers, Sparkles, Loader2, Save } from "lucide-react"
 
-export default function ArchitecturePlanPage() {
+function ArchitecturePlanContent() {
   const searchParams = useSearchParams()
   const idea = searchParams.get("idea") || ""
 
@@ -79,5 +79,17 @@ export default function ArchitecturePlanPage() {
         </div>
       </main>
     </div>
+  )
+}
+
+export default function ArchitecturePlanPage() {
+  return (
+    <Suspense fallback={
+      <div className="min-h-screen bg-background text-foreground flex items-center justify-center pb-20">
+        <Loader2 className="w-8 h-8 animate-spin text-primary" />
+      </div>
+    }>
+      <ArchitecturePlanContent />
+    </Suspense>
   )
 }
