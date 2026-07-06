@@ -6,11 +6,20 @@ import { GeneratorResults } from "./generator-results";
 import { motion } from "framer-motion";
 import { Sparkles, Camera, Rocket, Info } from "lucide-react";
 
+interface InstagramGeneratorResults {
+  concept: string;
+  visualApproach: string;
+  pillar: string;
+  captions: Array<{ id: string; tone: string; content: string }>;
+  hashtags: string[];
+  bestTime: string;
+}
+
 export function InstagramGenerator() {
   const [isLoading, setIsLoading] = useState(false);
-  const [results, setResults] = useState<any>(null);
+  const [results, setResults] = useState<InstagramGeneratorResults | null>(null);
 
-  const handleGenerate = async (formData: any) => {
+  const handleGenerate = async (formData: Record<string, string>) => {
     setIsLoading(true);
     setResults(null);
     

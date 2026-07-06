@@ -17,7 +17,7 @@ interface StepCardProps {
   description: string
   isActive: boolean
   isCompleted: boolean
-  savedPrompts: any[]
+  savedPrompts: { step: number; tool: string; content: string }[]
 }
 
 export function StepCard({ projectId, stepNumber, title, description, isActive, isCompleted, savedPrompts }: StepCardProps) {

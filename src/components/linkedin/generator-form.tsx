@@ -15,7 +15,7 @@ import { Slider } from "@/components/ui/slider";
 import { Sparkles, Loader2 } from "lucide-react";
 
 interface GeneratorFormProps {
-  onGenerate: (data: any) => void;
+  onGenerate: (data: Record<string, string | number>) => void;
   isLoading: boolean;
 }
 

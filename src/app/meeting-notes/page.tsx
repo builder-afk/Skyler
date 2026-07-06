@@ -24,7 +24,7 @@ export default function MeetingNotesConverter() {
   
   const [isLoading, setIsLoading] = useState(false)
   const [actionItems, setActionItems] = useState<ActionItem[]>([])
-  const [meetingData, setMeetingData] = useState<any>(null)
+  const [meetingData, setMeetingData] = useState<{ participants: string[]; action_items: ActionItem[] } | null>(null)
   const [activeTab, setActiveTab] = useState('input')
 
   const handleAnalyze = async () => {
@@ -308,7 +308,7 @@ export default function MeetingNotesConverter() {
                   </div>
                   <div className="flex items-center justify-between text-xs">
                     <span className="text-muted-foreground flex items-center gap-1.5"><Clock className="w-3.5 h-3.5" /> Date Nodes</span>
-                    <span className="font-medium text-foreground bg-secondary px-2 py-0.5 rounded-md">{meetingData.action_items.filter((i:any) => i.deadline !== 'TBD').length} extracted</span>
+                    <span className="font-medium text-foreground bg-secondary px-2 py-0.5 rounded-md">{meetingData.action_items.filter((i: ActionItem) => i.deadline !== 'TBD').length} extracted</span>
                   </div>
                 </div>
               </div>
@@ -316,7 +316,7 @@ export default function MeetingNotesConverter() {
             
             <div className="mt-6 bg-secondary/40 rounded-xl p-4 border border-border/40 text-xs text-muted-foreground leading-relaxed flex items-start gap-2">
               <AlertCircle className="w-4 h-4 text-primary shrink-0 mt-0.5" />
-              <p>Once you click "Extract Intelligence", the data is sent to the FastAPI backend where LangChain handles temporal parsing, participant assignment, and priority scoring using GPT models.</p>
+              <p>Once you click &quot;Extract Intelligence&quot;, the data is sent to the FastAPI backend where LangChain handles temporal parsing, participant assignment, and priority scoring using GPT models.</p>
             </div>
             
           </div>

@@ -49,7 +49,7 @@ export function PreferencesForm() {
             </Label>
             <Select
               value={preferences.defaultTool}
-              onValueChange={(v: any) => updatePreferences({ defaultTool: v })}
+              onValueChange={(v) => updatePreferences({ defaultTool: v || "Cursor" })}
             >
               <SelectTrigger className="bg-background/50">
                 <SelectValue placeholder="Select tool" />

@@ -61,8 +61,9 @@ export default function LoginPage() {
               
               try {
                 await signIn("credentials", { email, password, redirectTo: "/dashboard" })
-              } catch (error: any) {
-                if (error.name === "AuthError" || error.name === "CallbackRouteError" || error.type === "CallbackRouteError") {
+              } catch (error: unknown) {
+                const err = error as { name?: string, type?: string };
+                if (err.name === "AuthError" || err.name === "CallbackRouteError" || err.type === "CallbackRouteError") {
                   const { redirect } = await import("next/navigation")
                   redirect("/login?error=CredentialsSignin")
                 }

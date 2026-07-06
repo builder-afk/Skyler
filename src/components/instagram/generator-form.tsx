@@ -14,7 +14,7 @@ import {
 import { Sparkles, Loader2, Camera, Users, Target } from "lucide-react";
 
 interface GeneratorFormProps {
-  onGenerate: (data: any) => void;
+  onGenerate: (data: Record<string, string>) => void;
   isLoading: boolean;
 }
 

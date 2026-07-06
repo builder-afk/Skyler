@@ -4,13 +4,14 @@ import Link from 'next/link'
 import { Layers, User } from 'lucide-react'
 import { cn } from '@/lib/utils'
 import { getSession } from 'next-auth/react'
+import type { Session } from 'next-auth'
 
 interface PublicNavbarProps {
   className?: string
 }
 
 export function PublicNavbar({ className }: PublicNavbarProps) {
-  const [session, setSession] = useState<any>(null)
+  const [session, setSession] = useState<Session | null>(null)
 
   useEffect(() => {
     getSession().then((s) => setSession(s))

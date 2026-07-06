@@ -1,6 +1,6 @@
 "use client"
 
-import React, { useState } from "react"
+import React, { useState, Suspense } from "react"
 import { useSearchParams } from "next/navigation"
 import Link from "next/link"
 import { motion, AnimatePresence } from "framer-motion"
@@ -61,7 +61,7 @@ const ACTIONS = [
 ]
 
 // ── Main Component ───────────────────────────────────────────────
-export default function BuildReceptionistPage() {
+function BuildReceptionistContent() {
   const searchParams = useSearchParams()
   const initialDesc = searchParams.get("desc") || ""
 
@@ -554,5 +554,17 @@ export default function BuildReceptionistPage() {
         </div>
       </div>
     </div>
+  )
+}
+
+export default function BuildReceptionistPage() {
+  return (
+    <Suspense fallback={
+      <div className="min-h-screen flex items-center justify-center bg-background">
+        <div className="text-muted-foreground">Loading builder...</div>
+      </div>
+    }>
+      <BuildReceptionistContent />
+    </Suspense>
   )
 }

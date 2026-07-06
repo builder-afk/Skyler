@@ -6,11 +6,19 @@ import { GeneratorResults } from "./generator-results";
 import { motion } from "framer-motion";
 import { Sparkles, LayoutGrid, LayoutList, MessageSquare } from "lucide-react";
 
+interface LinkedInGeneratorResults {
+  posts: Array<{ id: string; content: string }>;
+  hashtags: string[];
+  titles: string[];
+  captions: string[];
+  bestTime: string;
+}
+
 export function LinkedInGenerator() {
   const [isLoading, setIsLoading] = useState(false);
-  const [results, setResults] = useState<any>(null);
+  const [results, setResults] = useState<LinkedInGeneratorResults | null>(null);
 
-  const handleGenerate = async (formData: any) => {
+  const handleGenerate = async (formData: Record<string, string | number>) => {
     setIsLoading(true);
     setResults(null);
     

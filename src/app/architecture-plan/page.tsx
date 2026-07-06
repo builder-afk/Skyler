@@ -47,7 +47,7 @@ function ArchitecturePlanContent() {
           <h1 className="text-3xl font-bold tracking-tight mb-2">Backend Architecture Plan</h1>
           <p className="text-muted-foreground">Generated based on your idea:</p>
           <div className="mt-4 p-4 rounded-xl bg-secondary/30 border border-border text-foreground font-medium">
-            "{idea}"
+            &quot;{idea}&quot;
           </div>
         </div>
 

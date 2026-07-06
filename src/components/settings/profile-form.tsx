@@ -7,10 +7,11 @@ import { Label } from "@/components/ui/label"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { createBrowserClient } from "@supabase/ssr"
 import { User, Mail, UserCircle, Save } from "lucide-react"
+import type { User as SupabaseUser } from "@supabase/supabase-js"
 import { toast } from "sonner"
 
 export function ProfileForm() {
-  const [user, setUser] = useState<any>(null)
+  const [user, setUser] = useState<SupabaseUser | null>(null)
   const [displayName, setDisplayName] = useState("")
 
   const supabase = createBrowserClient(
@@ -27,7 +28,7 @@ export function ProfileForm() {
       }
     }
     getUser()
-  }, [])
+  }, [supabase.auth])
 
   const handleSave = async () => {
     const { error } = await supabase.auth.updateUser({
