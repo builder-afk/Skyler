@@ -1,0 +1,297 @@
+Product Discovery
+Generate Product Ideas
+Solve a User Problem
+Startup Idea Validator
+SaaS Idea Generator
+AI Product Ideation
+Feature Brainstorming
+Product Opportunity Finder
+Blue Ocean Opportunity Analysis
+Innovation Workshop Facilitator
+Customer Pain Point Discovery
+Problem Discovery
+Jobs-to-be-Done Analysis
+Customer Problem Interview Guide
+Root Cause Analysis
+Opportunity Solution Tree
+Problem Statement Generator
+Value Proposition Canvas
+User Needs Analysis
+Assumption Mapping
+Hypothesis Generator
+Customer Journey Pain Points
+
+User Research
+User Persona Generator
+ICP Builder
+User Interview Questions
+Survey Generator
+Usability Testing Plan
+Customer Feedback Analysis
+Voice of Customer Summary
+User Journey Mapping
+User Segmentation
+Empathy Map Generator
+
+Product Requirements
+Complete PRD Generator
+PRD Review
+Executive Product Brief
+Feature Specification
+Technical Requirements
+Functional Requirements
+Non-functional Requirements
+MVP Definition
+Scope Definition
+Acceptance Criteria Generator
+
+User Stories
+User Story Generator
+Epic Generator
+Feature Breakdown
+Story Mapping
+Task Breakdown
+Acceptance Test Cases
+Definition of Done
+Agile Backlog Creation
+Sprint Goal Generator
+Release Scope
+
+Roadmapping
+Product Roadmap
+Quarterly Roadmap
+Annual Roadmap
+Feature Prioritization
+Theme-based Roadmap
+Outcome-based Roadmap
+Release Planning
+Milestone Planner
+Engineering Roadmap
+Executive Roadmap
+
+Prioritization
+RICE Scoring
+ICE Framework
+MoSCoW Prioritization
+Kano Model Analysis
+Value vs Effort Matrix
+Impact Mapping
+Opportunity Scoring
+Feature Ranking
+Technical Debt Prioritization
+Customer Request Prioritization
+
+Product Strategy
+Product Vision
+Product Mission
+Product Strategy
+North Star Metric
+Strategic Goals
+Market Positioning
+Competitive Advantage
+Product Differentiation
+Pricing Strategy
+Business Model Analysis
+
+Competitive Research
+Competitor Analysis
+Feature Comparison
+SWOT Analysis
+Product Benchmarking
+UX Comparison
+Pricing Comparison
+Market Gap Analysis
+Competitor Roadmap Guess
+Customer Review Analysis
+Win Loss Analysis
+
+UX & Design
+UX Writing
+Onboarding Copy
+Empty State Copy
+Error Messages
+Success Messages
+Confirmation Dialogs
+Tooltips
+Notifications
+Microcopy
+Feature Walkthrough
+Help Center Content
+Wireframe Ideas
+Dashboard Layout Suggestions
+Information Architecture
+UX Audit
+Accessibility Review
+Design Critique
+Design System Suggestions
+Navigation Planning
+Mobile UX Review
+UX Heuristic Evaluation
+
+Experimentation
+A/B Test Planner
+Hypothesis Generator
+Experiment Design
+Success Metrics
+Statistical Significance Guide
+Experiment Backlog
+Feature Flag Rollout Plan
+Beta Testing Strategy
+MVP Experiment Design
+Growth Experiment Ideas
+
+Metrics & Analytics
+KPI Framework
+North Star Metric
+Product Dashboard
+Funnel Analysis
+Retention Analysis
+Activation Metrics
+Churn Analysis
+User Engagement Review
+Feature Adoption Analysis
+Product Health Report
+
+Go-To-Market
+GTM Strategy
+Product Launch Checklist
+Launch Timeline
+Internal Launch Plan
+Customer Launch Email
+Press Release
+Product Announcement
+Beta Program Plan
+Pricing Launch
+Product Demo Script
+
+Stakeholder Communication
+Executive Update
+Sprint Review Summary
+Product Status Report
+Leadership Brief
+Investor Product Update
+Product Vision Presentation
+Product Pitch
+Kickoff Meeting Brief
+Cross-functional Alignment
+Decision Memo
+
+Collaboration
+Engineering Handoff
+Design Handoff
+Sales Enablement
+Customer Success Brief
+Marketing Launch Brief
+QA Testing Checklist
+Support Documentation
+Internal FAQ
+Release Notes
+Cross-team Communication
+
+Agile
+Sprint Planning
+Sprint Retrospective
+Sprint Review
+Daily Standup Summary
+Backlog Grooming
+Epic Planning
+Story Estimation
+Scrum Facilitation
+Agile Coaching
+Capacity Planning
+
+AI Product Manager
+AI Product Strategy
+AI Feature Brainstorm
+AI Workflow Design
+AI Agent Product Ideas
+Prompt Product Design
+LLM Product Evaluation
+AI UX Review
+AI Safety Checklist
+AI Cost Estimation
+AI Adoption Strategy
+
+Mobile Product Management
+Mobile App Roadmap
+Push Notification Strategy
+Mobile Onboarding
+App Store Optimization
+Mobile Feature Prioritization
+Mobile UX Review
+Mobile Growth Strategy
+Mobile Engagement Analysis
+
+Marketplace Products
+Marketplace Liquidity Strategy
+Supply & Demand Planning
+Trust & Safety Framework
+Marketplace Pricing
+Vendor Onboarding
+Buyer Journey Analysis
+Marketplace Incentives
+Marketplace Metrics
+
+SaaS Product Management
+SaaS Pricing
+SaaS Feature Roadmap
+SaaS Retention Strategy
+Trial Conversion
+Subscription Optimization
+Churn Reduction Plan
+Expansion Revenue Ideas
+Customer Success Playbook
+
+Growth Product
+Activation Strategy
+Retention Strategy
+Referral System
+Viral Loop Design
+Habit Loop Design
+Engagement Campaign
+Re-engagement Strategy
+Product-led Growth Plan
+
+Trust & Compliance
+Privacy Review
+Security Checklist
+Risk Assessment
+Compliance Planning
+GDPR Readiness
+Accessibility Compliance
+Incident Response Plan
+Trust Framework
+
+Documentation
+Product One-Pager
+Executive Summary
+Feature Documentation
+API Documentation Outline
+Changelog
+Decision Log
+Technical Overview
+Architecture Overview
+FAQ Generator
+Knowledge Base Article
+
+Premium Wow Prompts
+Complete PRD Generator
+AI Product Manager
+Product Strategy Consultant
+Product Roadmap Builder
+Feature Prioritization Assistant
+Jobs-to-be-Done Research Assistant
+User Interview Analyzer
+Product Launch Planner
+Competitor Intelligence Report
+Product Metrics Dashboard Designer
+Customer Feedback Synthesizer
+Product Vision & North Star Creator
+GTM Strategy Builder
+Product Experiment Designer
+Feature Adoption Analysis
+User Story & Acceptance Criteria Generator
+UX Copywriter
+Product Decision Memo Writer
+Executive Product Review Generator
+AI Copilot for Product Managers

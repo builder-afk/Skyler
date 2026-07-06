@@ -1,0 +1,256 @@
+Business Proposal
+Draft a Business Proposal
+Write a Client Proposal
+Partnership Proposal
+Sponsorship Proposal
+Project Proposal
+Grant Proposal
+Government Tender Proposal
+
+Business Planning
+Business Plan Generator
+Lean Canvas Builder
+Business Model Canvas
+Go-to-Market Strategy
+Market Entry Plan
+Product Launch Plan
+Pricing Strategy
+Revenue Model Designer
+Business Validation Framework
+Expansion Strategy
+
+Decision Making
+Compare Options
+Compare Two Business Ideas
+Compare Job Offers
+Compare Universities
+Compare Investment Opportunities
+Compare Software Tools
+Compare Vendors
+Compare Cars
+Compare Houses
+Compare Cities to Live
+Compare Career Paths
+Decision Frameworks
+Pros & Cons Analysis
+SWOT Analysis
+Decision Matrix
+Weighted Scoring Matrix
+Risk vs Reward Analysis
+Opportunity Cost Analysis
+First Principles Analysis
+Eisenhower Matrix
+Cost Benefit Analysis
+Expected Value Analysis
+
+Strategic Thinking
+Strategic Planning Assistant
+Long-Term Vision Planner
+Scenario Planning
+Future Forecasting
+What-if Analysis
+Competitive Strategy
+Blue Ocean Strategy
+Market Positioning
+Strategic Roadmap
+Exit Strategy
+
+Project Planning
+Project Planner
+Project Timeline Builder
+Milestone Planner
+Sprint Planning
+Resource Allocation
+Risk Assessment
+Dependency Mapping
+Budget Planning
+Delivery Roadmap
+Stakeholder Communication Plan
+
+Startup Planning
+Validate Startup Idea
+MVP Roadmap
+Fundraising Strategy
+Investor Readiness
+Product Roadmap
+Customer Discovery Plan
+Founder Decision Advisor
+Startup Risk Assessment
+Pivot Decision Framework
+Scale-up Planning
+
+Financial Planning
+Personal Budget Planner
+Business Budget Planner
+Investment Planning
+Financial Goal Roadmap
+Savings Plan
+Debt Repayment Strategy
+Retirement Planning
+Startup Financial Projection
+Cash Flow Planning
+Break-even Analysis
+
+Goal Planning
+SMART Goal Generator
+OKR Planner
+Quarterly Goal Planner
+Annual Planning
+Weekly Planning
+Daily Action Planner
+Habit Planning
+Milestone Tracker
+Accountability Plan
+Success Metrics Builder
+
+Research
+Research Any Topic
+Deep Research Assistant
+Literature Review
+Market Research
+Competitor Research
+Industry Analysis
+Technology Research
+Policy Research
+Product Research
+Trend Analysis
+Consumer Research
+
+Prioritization
+Prioritize Features
+Prioritize Tasks
+Product Backlog Prioritization
+RICE Scoring
+MoSCoW Prioritization
+ICE Framework
+Opportunity Prioritization
+Investment Prioritization
+Hiring Prioritization
+Goal Prioritization
+
+Risk Planning
+Risk Register
+Risk Assessment
+Risk Mitigation Plan
+Contingency Planning
+Disaster Recovery Planning
+Crisis Management
+Business Continuity Planning
+Compliance Planning
+Security Planning
+
+Problem Solving
+Root Cause Analysis
+5 Whys Analysis
+Fishbone Diagram Builder
+Systems Thinking Analysis
+Constraint Analysis
+Brainstorm Solutions
+Innovation Workshop
+Problem Breakdown
+Tradeoff Analysis
+
+Team Planning
+Meeting Agenda Builder
+Workshop Planner
+Team Capacity Planning
+Hiring Plan
+Delegation Planner
+Team OKRs
+Communication Plan
+Decision Memo
+Stakeholder Mapping
+
+Personal Life Planning
+Life Planning
+Career Planning
+Relocation Planning
+Wedding Planning
+Vacation Planner
+Home Buying Decision
+Apartment Comparison
+University Selection
+Study Plan
+Time Management Planner
+
+AI Decision Assistant
+AI Advisor for Major Decisions
+Devil's Advocate
+Second Opinion Generator
+Multi-Perspective Analysis
+Bias Detector
+Blind Spot Finder
+Worst Case Scenario Planner
+Best Case Scenario Planner
+Decision Confidence Checker
+Recommendation Engine
+
+Product Management
+Product Requirement Document (PRD)
+Product Roadmap
+Feature Prioritization
+User Story Generator
+Acceptance Criteria
+Release Planning
+Product Strategy
+Product Vision
+MVP Definition
+Product Risk Assessment
+
+Documentation
+Business Case
+Executive Brief
+Decision Memo
+Research Report
+Action Plan
+Strategic Roadmap
+Project Charter
+Requirements Document
+One-Pager
+Executive Summary
+
+Thinking Tools
+Mental Models Advisor
+Inversion Thinking
+Second-Order Thinking
+Pareto Analysis
+Decision Tree Generator
+Bayesian Reasoning Assistant
+Systems Mapping
+Critical Thinking Coach
+Assumption Testing
+Hypothesis Builder
+
+Travel & Event Planning
+Travel Itinerary
+Budget Travel Planner
+Event Planning
+Conference Planner
+Workshop Planning
+Road Trip Planner
+Family Vacation Planner
+Business Trip Planner
+Packing Checklist
+Event Timeline
+
+Premium Wow Prompts
+AI Decision Advisor
+Compare Multiple Options with a Weighted Decision Matrix
+Deep Research Assistant
+Business Proposal Generator
+Startup Validation Framework
+Product Roadmap Builder
+Strategic Planning Consultant
+What-if Scenario Simulator
+Risk Assessment & Mitigation Planner
+Prioritization Matrix Generator
+SWOT Analysis Expert
+Devil's Advocate Review
+Root Cause Analysis Assistant
+Annual Goal & OKR Planner
+Multi-Perspective Decision Coach
+Project Timeline & Milestone Planner
+Go-to-Market Strategy Builder
+Financial Planning Advisor
+Business Model Canvas Generator
+Executive Decision Memo Writer
