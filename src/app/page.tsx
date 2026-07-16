@@ -17,6 +17,7 @@ import { FeaturesSection } from '@/components/features-section'
 import { MarketplaceSection } from '@/components/marketplace-section'
 import { Footer } from '@/components/footer'
 import { ServicesSection } from '@/components/services-section'
+import { PricingSection } from '@/components/pricing-section'
 
 const PROMPT_TYPES = [
   { id: "Backend Architecture", name: "Backend Architecture", desc: "Design backend architecture" },
@@ -469,6 +470,8 @@ export default function LandingPage() {
         <FeaturesSection />
         
         <MarketplaceSection />
+        
+        <PricingSection />
       </main>
       
       <Footer />
