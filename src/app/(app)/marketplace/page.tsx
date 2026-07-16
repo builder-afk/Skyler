@@ -292,7 +292,7 @@ export default function MarketplacePage() {
   })
 
   return (
-    <div className="flex-1 overflow-y-auto bg-secondary/20">
+    <div className="flex-1 -m-8 flex flex-col bg-secondary/20">
 
       {/* ──────────── HERO BANNER ──────────── */}
       <div className="relative overflow-hidden bg-gradient-to-br from-accent/10 via-background to-emerald-500/10 border-b border-border">

@@ -1,10 +1,13 @@
 "use client"
 import React, { useEffect, useState } from 'react'
 import Link from 'next/link'
-import { Layers, User } from 'lucide-react'
+import { Sparkles, User } from 'lucide-react'
 import { cn } from '@/lib/utils'
 import { getSession } from 'next-auth/react'
 import type { Session } from 'next-auth'
+import { Comfortaa } from 'next/font/google'
+
+const comfortaa = Comfortaa({ subsets: ['latin'] })
 
 interface PublicNavbarProps {
   className?: string
@@ -19,8 +22,8 @@ export function PublicNavbar({ className }: PublicNavbarProps) {
   
   return (
     <header className={cn("relative z-50 flex items-center justify-between px-6 md:px-12 lg:px-20 py-5 font-body", className)}>
-      <Link href="/" className="text-xl font-semibold tracking-tight text-foreground flex items-center gap-2">
-        <Layers className="h-5 w-5 text-accent" /> Skyler
+      <Link href="/" className={cn("text-2xl font-bold tracking-tighter text-foreground flex items-center gap-1", comfortaa.className)}>
+        miracle<Sparkles className="h-5 w-5 text-foreground mb-4 -ml-1" />
       </Link>
       <nav className="hidden md:flex items-center gap-8 text-sm text-muted-foreground">
         <Link href="/#services" className="hover:text-foreground transition-colors">Our Services</Link>

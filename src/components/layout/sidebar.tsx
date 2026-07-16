@@ -3,10 +3,13 @@
 import React, { useState, useEffect } from "react"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
-import { Globe, LayoutDashboard, Plus, Settings, LayoutTemplate, Workflow, Layers, FileText, ImageIcon, PackageSearch, Video, AppWindow, Wand2, ShoppingBag, Users, MessageSquare, Camera, PanelLeftClose, PanelLeftOpen } from "lucide-react"
+import { Globe, LayoutDashboard, Plus, Settings, LayoutTemplate, Workflow, Layers, FileText, ImageIcon, PackageSearch, Video, AppWindow, Wand2, ShoppingBag, Users, MessageSquare, Camera, PanelLeftClose, PanelLeftOpen, Sparkles } from "lucide-react"
+import { Comfortaa } from "next/font/google"
 
 import { cn } from "@/lib/utils"
 import { buttonVariants } from "@/components/ui/button"
+
+const comfortaa = Comfortaa({ subsets: ["latin"] })
 
 export function Sidebar() {
   const pathname = usePathname()
@@ -114,9 +117,9 @@ export function Sidebar() {
           <>
             <Link href="/" className="flex items-center gap-2 hover:opacity-80 transition-opacity">
               <div className="h-8 w-8 rounded bg-primary text-primary-foreground flex items-center justify-center font-bold shadow-sm shrink-0">
-                <Layers className="h-4 w-4" />
+                <Sparkles className="h-4 w-4" />
               </div>
-              <span className="text-xl font-bold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-foreground to-foreground/70">Skyler</span>
+              <span className={cn("text-xl font-bold tracking-tighter bg-clip-text text-transparent bg-gradient-to-r from-foreground to-foreground/70", comfortaa.className)}>miracle</span>
             </Link>
             <button 
               onClick={() => setIsCollapsed(true)}

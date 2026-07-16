@@ -75,7 +75,7 @@ export default function ContactPage() {
               </div>
               <div className="flex flex-col">
                 <span className="text-sm font-semibold text-foreground mb-1">Email us</span>
-                <a href="mailto:hello@skyler.ai" className="text-muted-foreground hover:text-primary transition-colors">hello@skyler.ai</a>
+                <a href="mailto:hello@skyler.ai" className="text-muted-foreground hover:text-primary transition-colors">kv853772@gmail.com</a>
                 <span className="text-xs text-muted-foreground/60 mt-1">We typically reply within 2 hours.</span>
               </div>
             </div>
@@ -86,7 +86,7 @@ export default function ContactPage() {
               </div>
               <div className="flex flex-col">
                 <span className="text-sm font-semibold text-foreground mb-1">Call us</span>
-                <a href="tel:+18005550199" className="text-muted-foreground hover:text-primary transition-colors">+1 (800) 555-0199</a>
+                <a href="tel:+18005550199" className="text-muted-foreground hover:text-primary transition-colors">+91 7376284881</a>
                 <span className="text-xs text-muted-foreground/60 mt-1">Mon-Fri from 9am to 6pm PST.</span>
               </div>
             </div>
@@ -97,7 +97,7 @@ export default function ContactPage() {
               </div>
               <div className="flex flex-col">
                 <span className="text-sm font-semibold text-foreground mb-1">Visit our office</span>
-                <span className="text-muted-foreground">100 AI Innovation Drive<br/>San Francisco, CA 94105</span>
+                <span className="text-muted-foreground">100 AI Innovation Drive<br/>Ghaziabad, Uttar Pradesh 201013</span>
               </div>
             </div>
           </div>

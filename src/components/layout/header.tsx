@@ -10,13 +10,20 @@ import {
 } from "@/components/ui/dropdown-menu"
 import { useAppStore } from "@/store/projectStore"
 import { signOut } from "next-auth/react"
+import { usePathname } from "next/navigation"
+import { PublicNavbar } from "@/components/public-navbar"
 
 export function Header() {
+  const pathname = usePathname()
   const selectedTool = useAppStore((state) => state.selectedTool)
   const setSelectedTool = useAppStore((state) => state.setSelectedTool)
 
   const handleLogout = async () => {
     await signOut({ callbackUrl: '/' })
+  }
+
+  if (pathname.startsWith('/marketplace')) {
+    return <PublicNavbar className="border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60" />
   }
 
   return (

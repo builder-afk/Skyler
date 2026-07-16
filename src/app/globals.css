@@ -80,5 +80,21 @@
   html {
     @apply font-sans;
     font-size: 80%;
+    zoom: 0.8;
+  }
+}
+
+@layer utilities {
+  .h-screen {
+    height: 125vh !important;
+  }
+  .min-h-screen {
+    min-height: 125vh !important;
+  }
+  .w-screen {
+    width: 125vw !important;
+  }
+  .min-w-screen {
+    min-width: 125vw !important;
   }
 }

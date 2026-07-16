@@ -12,10 +12,10 @@ import {
 } from "@/components/ui/dropdown-menu"
 import { Bell, ChevronDown, ChevronRight, Play, Plus, Search, MoreVertical, Code2, Sparkles, Server, LayoutTemplate, Copy, CheckCircle2, ArrowRight, Mic, Paperclip, Settings, Layers, ImagePlus, FileUp, X, Lightbulb } from 'lucide-react'
 import { Button } from '@/components/ui/button'
-import { PricingSection } from '@/components/pricing-section'
 import { PublicNavbar } from '@/components/public-navbar'
 import { FeaturesSection } from '@/components/features-section'
 import { MarketplaceSection } from '@/components/marketplace-section'
+import { Footer } from '@/components/footer'
 import { ServicesSection } from '@/components/services-section'
 
 const PROMPT_TYPES = [
@@ -91,7 +91,7 @@ export default function LandingPage() {
   }
 
   return (
-    <div className="min-h-screen flex flex-col bg-background overflow-x-hidden relative font-body text-foreground pb-20">
+    <div className="min-h-screen flex flex-col bg-background overflow-x-hidden relative font-body text-foreground">
       {/* Hero Background Video */}
       <video
         autoPlay
@@ -469,10 +469,10 @@ export default function LandingPage() {
         <FeaturesSection />
         
         <MarketplaceSection />
-        
-        <PricingSection />
-        
       </main>
+      
+      <Footer />
     </div>
   )
 }
+// force rebuild turbopack cache
