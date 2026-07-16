@@ -14,6 +14,7 @@ const tiers = [
     color: "emerald",
     icon: Sparkles,
     forText: "Local businesses, clinics, salons, single-location retail, solo professionals",
+    originalPrice: "₹18,749",
     price: "₹14,999",
     period: "/month",
     setup: "₹9,999 one-time setup",
@@ -36,6 +37,7 @@ const tiers = [
     color: "blue",
     icon: Bot,
     forText: "Growing D2C brands, real estate, coaching institutes, multi-location businesses",
+    originalPrice: "₹49,999",
     price: "₹39,999",
     period: "/month",
     setup: "₹24,999 one-time setup",
@@ -58,6 +60,7 @@ const tiers = [
     color: "purple",
     icon: Globe2,
     forText: "Funded startups, mid-market companies, franchises",
+    originalPrice: "₹1,12,499",
     price: "₹89,999",
     period: "/month",
     setup: "₹49,999 one-time setup",
@@ -80,6 +83,7 @@ const tiers = [
     color: "amber",
     icon: Building2,
     forText: "Large enterprises, BFSI, healthcare chains, e-commerce platforms",
+    originalPrice: "₹2,50,000+",
     price: "₹2,00,000+",
     period: "/month",
     setup: "Custom setup",
@@ -224,12 +228,14 @@ export function PricingSection() {
               </div>
 
               {/* Price */}
-              <div className="mb-1">
+              <div className="mb-6">
+                <div className="flex items-center gap-2 mb-1">
+                  <span className="text-sm text-muted-foreground line-through">{tier.originalPrice}</span>
+                  <span className="text-[10px] font-bold uppercase tracking-wider bg-emerald-500/10 text-emerald-600 px-2 py-0.5 rounded-full">20% off</span>
+                </div>
                 <div className="flex items-baseline gap-1">
                   <span className="text-3xl font-extrabold tracking-tight text-foreground">{tier.price}</span>
-                  <span className="text-sm text-muted-foreground font-medium">{tier.period}</span>
                 </div>
-                <p className="text-xs text-muted-foreground mt-1">{tier.setup}</p>
               </div>
 
               {/* CTA */}
