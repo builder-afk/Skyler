@@ -1,7 +1,7 @@
 "use client"
 
 import React, { useState } from 'react'
-import { Check, Zap, Bot, Globe2, BrainCircuit, Building2, Sparkles, ArrowRight, MessageSquare, Mic, Video, Workflow, Languages } from 'lucide-react'
+import { Check, Zap, Bot, Globe2, BrainCircuit, Building2, Sparkles, ArrowRight, MessageSquare, Mic, Video, Workflow, Languages, Tag } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { motion } from 'framer-motion'
 import Link from 'next/link'
@@ -153,6 +153,16 @@ const colorMap: Record<string, { bg: string; border: string; text: string; badge
 
 export function PricingSection() {
   const [hoveredTier, setHoveredTier] = useState<string | null>(null)
+  const [couponApplied, setCouponApplied] = useState(false)
+
+  const applyDiscount = (priceStr: string) => {
+    if (!couponApplied) return priceStr;
+    const hasPlus = priceStr.includes('+');
+    const numStr = priceStr.replace(/[^\d]/g, '');
+    if (!numStr) return priceStr;
+    const num = parseInt(numStr, 10);
+    return `₹${(num - 3000).toLocaleString('en-IN')}${hasPlus ? '+' : ''}`;
+  }
 
   return (
     <section id="pricing" className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-28 font-body">
@@ -176,6 +186,31 @@ export function PricingSection() {
             From AI visibility for local businesses to full enterprise automation.
             Start where you are — scale when you&apos;re ready.
           </p>
+          <div className="mt-10 flex flex-col justify-center items-center gap-3">
+            <div className="relative group">
+              {!couponApplied && (
+                <div className="absolute -inset-1 bg-gradient-to-r from-emerald-500 to-emerald-300 rounded-full blur opacity-40 group-hover:opacity-75 transition duration-1000 group-hover:duration-200 animate-pulse"></div>
+              )}
+              <Button 
+                variant={couponApplied ? "default" : "outline"}
+                size="lg"
+                onClick={() => setCouponApplied(!couponApplied)}
+                className={`relative w-full sm:w-auto rounded-full transition-all duration-300 font-bold text-base shadow-sm ${
+                  couponApplied 
+                    ? 'bg-emerald-600 hover:bg-emerald-700 text-white shadow-emerald-500/25 border-transparent' 
+                    : 'bg-background border-2 border-emerald-500/50 text-emerald-600 hover:bg-emerald-50 hover:text-emerald-700 dark:hover:bg-emerald-950/30'
+                }`}
+              >
+                <Tag className={`w-5 h-5 mr-2 ${couponApplied ? 'text-emerald-100' : 'text-emerald-500'}`} />
+                {couponApplied ? "Coupon Applied! (₹3,000 Off)" : "Apply Code: SAVE3000"}
+              </Button>
+            </div>
+            {!couponApplied && (
+              <span className="text-sm text-emerald-600 font-medium animate-bounce mt-2">
+                ↓ Click to save ₹3,000 on all tiers
+              </span>
+            )}
+          </div>
         </motion.div>
       </div>
 
@@ -234,8 +269,13 @@ export function PricingSection() {
                   <span className="text-[10px] font-bold uppercase tracking-wider bg-emerald-500/10 text-emerald-600 px-2 py-0.5 rounded-full">20% off</span>
                 </div>
                 <div className="flex items-baseline gap-1">
-                  <span className="text-3xl font-extrabold tracking-tight text-foreground">{tier.price}</span>
+                  <span className="text-3xl font-extrabold tracking-tight text-foreground">{applyDiscount(tier.price)}</span>
                 </div>
+                {couponApplied && (
+                  <div className="text-xs font-medium text-emerald-600 mt-1">
+                    Includes ₹3,000 discount
+                  </div>
+                )}
               </div>
 
               {/* CTA */}
